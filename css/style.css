@@ -317,6 +317,9 @@ header div::after{
     content: url(../img/icon-hamburger.svg);
     margin-left: 75px;
 }
+main{
+    width: 100vw;
+}
 main section{
     padding-left: 20px;
 }
@@ -427,11 +430,32 @@ footer section:nth-of-type(2) nav ul{
 footer section:nth-of-type(2) nav{
 padding-top: 30px;
 display: flex;
-justify-content: space-between;
+justify-content: space-evenly;
 align-items: flex-start;
+width: 100vw;
 }
 footer section:nth-of-type(2) div.uno{
-    flex-direction: column-reverse
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center ;
+    align-items: center;
+    padding-bottom: 35px;
+}
+footer section:nth-of-type(2) div.uno div:nth-of-type(2) a{
+    margin: 0px;
+    padding: 0px;
+}
+footer section:nth-of-type(2) div.uno div:nth-of-type(2){
+    display: flex;
+    padding: ;
+    justify-content: space-evenly;
+    padding: 35px 20px 35px 20px;
+    width: 100vw;
+    transform: scale(120%); 
+}
+footer p{
+    text-align: center;
+    padding: 0px 0px 20px;
 }
 
 }
