@@ -314,11 +314,8 @@ header button{
     display: none;
 }
 header div::after{
-    content: url(../img/icon-hamburger.svg);
+    content: url("../img/icon-hamburger.svg");
     margin-left: 75px;
-}
-main{
-    width: 100vw;
 }
 main section{
     padding-left: 20px;
@@ -400,7 +397,7 @@ main section:nth-of-type(3) article:nth-of-type(2){
     font-size: .85rem;
 }
 main section:nth-of-type(3) article:nth-of-type(2)::after{
-    content: url(../img/puntitos.png);
+    content: url("../img/puntitos.png");
     margin-top: 30px;
 }
 main section:nth-of-type(3){
@@ -428,30 +425,31 @@ footer section:nth-of-type(2) nav ul{
     padding: 0px;
 }
 footer section:nth-of-type(2) nav{
-padding-top: 30px;
-display: flex;
-justify-content: space-evenly;
-align-items: flex-start;
-width: 100vw;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100vw;
 }
 footer section:nth-of-type(2) div.uno{
     display: flex;
     flex-direction: column-reverse;
     justify-content: center ;
     align-items: center;
-    padding-bottom: 35px;
+    padding: 0px 0px 35px 0px;
+    margin: 0px;
 }
-footer section:nth-of-type(2) div.uno div:nth-of-type(2) a{
+footer section:nth-of-type(2) div.uno div.redes a{
     margin: 0px;
     padding: 0px;
+    transform: scale(130%);
 }
-footer section:nth-of-type(2) div.uno div:nth-of-type(2){
+footer section:nth-of-type(2) div.uno div.redes{
     display: flex;
-    padding: ;
     justify-content: space-evenly;
-    padding: 35px 20px 35px 20px;
+    padding: 35px 0px 35px 0px;
+    margin: 0px;
     width: 100vw;
-    transform: scale(120%); 
 }
 footer p{
     text-align: center;
