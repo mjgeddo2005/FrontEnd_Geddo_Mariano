@@ -92,6 +92,7 @@ main section:nth-of-type(1) article:nth-of-type(1) p{
     color: black;
     font-size: 1rem;
     font-weight: bold;
+    line-height: 1.8rem;
     margin-right: 100px;
     padding-bottom: 28px;
     padding-top: 28px;
@@ -145,6 +146,7 @@ main section article h2{
 main section:nth-of-type(2) article:nth-of-type(1) p{
     font-weight: bold;
     font-size: 1rem;
+    line-height: 1.8rem;
     padding-top: 36px;
 }
 main section article ol{
@@ -176,6 +178,7 @@ main section:nth-of-type(2) article:nth-of-type(2) ol li span{
 }
 main section:nth-of-type(2) article:nth-of-type(2) ol li p{
     color: #B3B2B7;
+    line-height: 1.8rem;
     margin-left: 45px;
     padding-bottom: 42px;
     padding-top: 18px;
@@ -196,9 +199,9 @@ main section:nth-of-type(3) article{
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 35px;
-    width: 440px;
+    width: 450px;
 }
 main section:nth-of-type(3) article img{
     height: 70px;
@@ -207,6 +210,7 @@ main section:nth-of-type(3) article img{
 main section:nth-of-type(3) article p{
     color: #B9B9C1;
     font-weight: 600;
+    line-height: 1.8rem;
     text-align: center;
 }
 main section:nth-of-type(3) article span{
@@ -375,9 +379,9 @@ main section:nth-of-type(2) article:nth-of-type(1) p{
     padding: 20px 40px;
     text-align: justify;
 }
-main section:nth-of-type(2) article:nth-of-type(2){
+/*main section:nth-of-type(2) article:nth-of-type(2){
     transform: scale(90%);
-}
+}*/
 main section:nth-of-type(2) article:nth-of-type(2) ol{
     margin-top: 0px;
 }
@@ -386,6 +390,8 @@ main section:nth-of-type(2) article:nth-of-type(2) ol li p{
     margin-left: -45px;
     padding-bottom: 30px;
     padding-top: 10px;
+    font-size: .8rem;
+    line-height: 1.3rem;
 }
 main section:nth-of-type(2) article:nth-of-type(2) ol li span{
     font-size: .9rem;
@@ -402,6 +408,7 @@ main section:nth-of-type(3) article:nth-of-type(3){
 }
 main section:nth-of-type(3) article:nth-of-type(2){
     font-size: .85rem;
+    line-height: 1.5rem;
     padding: 0px 20px;
 }
 main section:nth-of-type(3) article:nth-of-type(2)::after{
