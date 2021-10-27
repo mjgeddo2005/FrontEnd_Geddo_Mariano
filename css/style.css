@@ -27,12 +27,17 @@ button.naranja{
     padding: 12.5px 30.5px;
 }
 header{
+    position: sticky;
+    top: 0px;
+    z-index: 100;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding-top: 77px;
-    padding-bottom: 77px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: white;
+    margin-bottom: 20px;
 }
 header div img{
     height: 16px;    
@@ -108,8 +113,10 @@ main section article img{
     width: 220px;
 }
 main section:nth-of-type(1) article:nth-of-type(2) div{
-    height: 220px; 
+    height: 220px;
     width: 220px;
+    padding: 2px;
+    border: solid 2px white;
 }
 main section:nth-of-type(1) article:nth-of-type(2) div span{
     display: inline-block;
@@ -120,22 +127,27 @@ main section:nth-of-type(1) article:nth-of-type(2) div span:nth-of-type(1){
     font-weight: 550;
     padding: 54px 74px 24px 19px;
     position: relative;
+    background-color: #FAFAFA;
+    border-radius: 7px;
 }
-main section article:nth-of-type(2) div span:nth-of-type(2){
+main section:nth-of-type(1) article:nth-of-type(2) div span:nth-of-type(2){
     background-color:#F3603B ;
     border-radius: 5px;
     color:  #FFFFFF;
     font-size: 1rem;
-    padding: 48px 36px 17px 18px;
+    padding: 42px 30px 17px 16px;
     position: relative;
 }
-main section article:nth-of-type(2) div span:nth-of-type(3){
+main section:nth-of-type(1) article:nth-of-type(2) div span:nth-of-type(3){
     border-radius: 5px;
     color:  #343A40;
     font-size: 1rem;
     font-weight: 600;
-    padding: 48px 36px 17px 18px;
+    padding: 42px 30px 17px 16px;
     position: relative;
+    background-color: #FAFAFA;
+    border-radius: 7px;
+    border: solid 2px white;
 }
 main section article h2{
     color: #242E52;
@@ -158,21 +170,21 @@ main section article ol li{
     counter-increment: cuentali;
     margin-left: 16px;
 }
-main section article ol li:before{
+main section article ol li p:nth-of-type(1):before{
     background: #F3603B;
     border-radius: 25px;
     color: white;
     content: "0" counter(cuentali);
     display: inline-block;
     font-size: 1rem;
-    margin-left: -50px;
+    margin-right: 20px;
     padding: 10px 25px;
     position: relative;
     text-align: center;
 }
-main section:nth-of-type(2) article:nth-of-type(2) ol li span{
+main section:nth-of-type(2) article:nth-of-type(2) ol li p:nth-of-type(1){
     color: #242E52 ;
-    margin-left: 25px;
+    margin-left: -45px;
     font-size: 1rem;
     font-weight: bold;
 }
@@ -180,7 +192,6 @@ main section:nth-of-type(2) article:nth-of-type(2) ol li p{
     color: #B3B2B7;
     line-height: 1.8rem;
     margin-left: 45px;
-    padding-bottom: 42px;
     padding-top: 18px;
 }
 main h2{
@@ -202,10 +213,16 @@ main section:nth-of-type(3) article{
     justify-content: flex-start;
     margin-top: 35px;
     width: 450px;
+    background-color: #FAFAFA;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 main section:nth-of-type(3) article img{
     height: 70px;
     width: 70px;
+    margin-top: -35px;
+    border-radius: 50%;
+    border: solid 4px white;
 }
 main section:nth-of-type(3) article p{
     color: #B9B9C1;
@@ -330,20 +347,22 @@ header div::after{
     margin-left: 75px;
 }
 main section{
-    padding-left: 20px;
+    padding: 40px 20px 40px 20px;
 }
 main section:nth-of-type(1){
     flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
 }
 main section:nth-of-type(1) article{
-    width: 340px;
+    width: 350px;
 }
 main section:nth-of-type(1) article:nth-of-type(1){
     align-items: center;
 }
 main section:nth-of-type(1) article:nth-of-type(1) h3{
     font-size: 2rem;
-    padding-top: 0px;
+    padding-top: 30px;
     text-align: center;
 } 
 main section:nth-of-type(1) article:nth-of-type(1) p{
@@ -357,15 +376,42 @@ main section:nth-of-type(1) article:nth-of-type(1) p{
 main section:nth-of-type(1) article:nth-of-type(1) button.naranja{
     margin-top: 15px;    
 }
+main section:nth-of-type(1) article:nth-of-type(2) div{
+    width: 160px;
+    height: 140px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 main section:nth-of-type(1) article:nth-of-type(2){
-    align-items: flex-start;
+    align-items:center;
+    justify-content: space-evenly;
 }
 main section:nth-of-type(1) article:nth-of-type(2) img{
     height: 105px;
     width: 110px;
 }
-main section:nth-of-type(1) article:nth-of-type(2) div{
-    transform: scale(70%);
+main section:nth-of-type(1) article:nth-of-type(2) div span:nth-of-type(1){
+    color: #343A40;
+    font-size: .95rem;
+    font-weight: 550;
+    padding: 27px 45px 12px 9px;
+    position: relative;
+}
+main section:nth-of-type(1) article:nth-of-type(2) div span:nth-of-type(2){
+    background-color:#F3603B ;
+    border-radius: 5px;
+    color:  #FFFFFF;
+    font-size: .5rem;
+    padding: 24px 15px 8.5px 9px;
+    position: relative;
+}
+main section:nth-of-type(1) article:nth-of-type(2) div span:nth-of-type(3){
+    border-radius: 5px;
+    color:  #343A40;
+    font-size: .5rem;
+    font-weight: 600;
+    padding: 24px 18px 8.5px 9px;
+    position: relative;
 }
 main section:nth-of-type(2) article:nth-of-type(1) h2{
     font-size: 1.5rem;
@@ -379,9 +425,6 @@ main section:nth-of-type(2) article:nth-of-type(1) p{
     padding: 20px 40px;
     text-align: justify;
 }
-/*main section:nth-of-type(2) article:nth-of-type(2){
-    transform: scale(90%);
-}*/
 main section:nth-of-type(2) article:nth-of-type(2) ol{
     margin-top: 0px;
 }
@@ -393,9 +436,13 @@ main section:nth-of-type(2) article:nth-of-type(2) ol li p{
     font-size: .8rem;
     line-height: 1.3rem;
 }
-main section:nth-of-type(2) article:nth-of-type(2) ol li span{
+main section:nth-of-type(2) article:nth-of-type(2) ol li p:nth-of-type(1){
+    background-color: rgba(228, 118, 118, 0.55);
+    padding: 0px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
     font-size: .9rem;
-    margin-left: 5px;
+    margin-left: -50px;
 }
 main section:nth-of-type(3){
     margin-top: 0px;
@@ -410,11 +457,14 @@ main section:nth-of-type(3) article:nth-of-type(2){
     font-size: .85rem;
     line-height: 1.5rem;
     padding: 0px 20px;
+
 }
-main section:nth-of-type(3) article:nth-of-type(2)::after{
-    content: url("../img/puntitos.png");
-    margin-top: 30px;
+
+main section:nth-of-type(3)::after{
+    content: url("../img/puntitos.png");    
+    padding-top: 30px;
 }
+
 main section:nth-of-type(3){
     padding-bottom: 0px;
 }
